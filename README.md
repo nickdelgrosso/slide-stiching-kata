@@ -1,9 +1,17 @@
 
 # Slide Stitching Exercise
 
-## Description
+## Background
 
-A single slide containing four individual, stained mouse brain sections was imaged using a widefield scanner. The scanner produces image tiles of constant height and width, and all tiles from the slide are saved into one folder, regardless of which section they belong to.
+A single slide containing four individual, stained mouse brain sections was imaged using a widefield scanner. The slide looks somthing like the following:
+
+![Slide](./imgs/PW162-A06.jpg)
+
+## Problem
+
+The whole slide can't be imaged all at once.  Instead, a robot scanner produces smaller image tiles of this slide, each of constant height and width, saving all of them into one folder, regardless of which section they belong to. 
+
+We want images of the brain sections.  How do we reconstruct the image for each section?
 
 Create a program that:
 
@@ -13,10 +21,10 @@ Create a program that:
     
     - Naming should happen consistently, with the first directory corresponding to the upper-left-most section, and proceeding left-to-right, top-to-bottom, ending with the lower-right-most section.
 
-    - This program can take the form of a jupyter notebook, a function, or a command-line script.  It should be organized and easy to modify for other files.
+  2) Creates a merged section image file for a given section directory.
 
-  2) [Optionally]  Creates a merged section image file for a given section directory.
 
+This program can take the form of a jupyter notebook, a function, or a command-line script.  It should be organized and easy to modify for other files.
 
 ## Get a clone of this repository on your computer
 
