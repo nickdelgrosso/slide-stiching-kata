@@ -7,11 +7,10 @@ A single slide containing four individual, stained mouse brain sections was imag
 
 ![Slide](./imgs/PW162-A06.jpg)
 
-## Problem
-
-The whole slide can't be imaged all at once.  Instead, a robot scanner produces smaller image tiles of this slide, each of constant height and width, saving all of them into one folder, regardless of which section they belong to. 
+However, the whole slide can't be imaged all at once.  Instead, a robot scanner produces smaller image tiles of this slide, each of constant height and width, saving all of them into one folder, regardless of which section they belong to. As a result, we get a jigsaw-puzzle like set of image tiles to work with, rather than a complete image.
 
 We want images of the brain sections.  How do we reconstruct the image for each section?
+
 
 Create a program that:
 
@@ -24,7 +23,34 @@ Create a program that:
   2) Creates a merged section image file for a given section directory.
 
 
-This program can take the form of a jupyter notebook, a function, or a command-line script.  It should be organized and easy to modify for other files.
+This program can take the form of a jupyter notebook, a function, or a command-line script.  Regardless of the programs form, it should be organized and easy to modify for other datasets.
+
+## Technical Questions ("Can We / How Can We / How SHould We..." Questions) 
+
+  1) How Do I Get the Data Onto My Computer?
+  
+  2) How Can We Check the Quality of These Files?  Can We Visualize, Browse the Images in Python?
+
+  3) How Can We Extract the Tile's Position from these files?
+
+  4) How Can we group same-section tiles?
+
+  5) How Should We Implement The File Reorganization?
+  
+  6) How Can We Merge Multiple Large Files?
+
+
+## General Questions
+
+  1) Do I have the right data?
+
+  2) Do I have all the data?  (For us, that means, "How many brain complete sections are in this dataset?")
+
+  3) How are the sections in this dataset arranged on the slide?
+
+
+
+# Useful Shell Terminal Snippets
 
 ## Get a clone of this repository on your computer
 
@@ -46,6 +72,6 @@ dvc pull
 
   
 
-## Contributors
+# Acknowledgments
 
 Many thanks to Dr. Johannes Kohl (https://www.kohl-lab.org/people) for providing the data and description for this kata!
