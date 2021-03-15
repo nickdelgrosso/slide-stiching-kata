@@ -6,9 +6,13 @@
   1) Python Packages: 
      - **pathlib**: https://github.com/chris1610/pbpython/blob/master/extras/Pathlib-Cheatsheet.pdf
      - **shutil**: https://docs.python.org/3/library/shutil.html
-     - tifffile
+     - **tifffile**: ./notebooks/tutorials/read_tiff.ipynb
   
-  2) Processes
+  2) Processes:
+     - Extracting metadata from regularly-formatted filenames
+     - Batch-processing files
+     - File management in pipelines
+     - Algorithm Discovery
 
 ## Background
 
