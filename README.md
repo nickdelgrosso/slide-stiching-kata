@@ -1,6 +1,15 @@
 
 # Slide Stitching Exercise
 
+## Learning Goals
+
+  1) Python Packages: 
+     - **pathlib**: https://github.com/chris1610/pbpython/blob/master/extras/Pathlib-Cheatsheet.pdf
+     - **shutil**: https://docs.python.org/3/library/shutil.html
+     - tifffile
+  
+  2) Processes
+
 ## Background
 
 A single slide containing four individual, stained mouse brain sections was imaged using a widefield scanner. The slide looks somthing like the following:
@@ -16,9 +25,9 @@ Create a program that:
 
   1) Copies or Symlinks the images into seperate folders, one for each brain section.  (e.g. data/proacessed/A, data/processed/B, etc)
 
-    - The filenames contain metadata that will help with this.
+     - The filenames contain metadata that will help with this.
     
-    - Naming should happen consistently, with the first directory corresponding to the upper-left-most section, and proceeding left-to-right, top-to-bottom, ending with the lower-right-most section.
+     - Naming should happen consistently, with the first directory corresponding to the upper-left-most section, and proceeding left-to-right, top-to-bottom, ending with the lower-right-most section.
 
   2) Creates a merged section image file for a given section directory.
 
