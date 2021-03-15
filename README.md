@@ -79,7 +79,22 @@ pip install -r requirements
 dvc pull
 ```
 
-  
+### Question: How did you set up this dvc system?
+
+Roughly the sequence used: 
+```
+dvc init  # Have DVC track the project as a repository
+dvc add data/raw
+git add .dvc data/raw.dvc
+# Make a google drive folder, copy-past the folder's ID from the URL
+dvc remote add -d gdrive gdrive://<folder-id>
+dvc push
+# git commit everything dvc-related that's not ignored.
+```
+
+
+
+
 
 # Acknowledgments
 
